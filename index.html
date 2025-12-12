@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Personal Colour Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="logo.png" class="logo">
+
+        <h1>Premium Personal Colour Analysis – ₹799</h1>
+
+        <!-- IMAGE UPLOAD -->
+        <div class="section">
+            <label>Select Your Photo</label>
+            <input type="file" id="imageUpload" accept="image/*">
+        </div>
+
+        <!-- PAYMENT SECTION -->
+        <div class="section" id="paymentSection">
+            <h2>Complete Payment – ₹799</h2>
+
+            <p>Scan and pay using UPI:</p>
+            <img src="upi-qr.png" class="qr">
+
+            <p>Upload payment proof:</p>
+            <input type="file" id="paymentProof" accept="image/*">
+        </div>
+
+        <!-- GOOGLE FORM -->
+        <div class="section">
+            <a href="https://forms.gle/LVfKYPr7yH9mx4eT9" target="_blank" class="form-btn">
+                Fill Required Information (Google Form)
+            </a>
+        </div>
+
+        <!-- ANALYZE BUTTON -->
+        <button id="analyzeBtn" disabled>
+            Generate Full Premium PDF Report
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
